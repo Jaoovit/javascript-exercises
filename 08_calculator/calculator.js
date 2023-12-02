@@ -6,20 +6,13 @@ const subtract = function(a, b) {
 	return a - b;
 };
 
-const sum = function() {
-	let myNums = [];
-
-  let sum = 0;
-
-  for(let i = 0; i < myNums.length; i++) {
-    sum += myNums[i];
-  }
-
-  return sum
+const sum = function(array) {
+	return array.reduce((total, current) => total + current, 0);
 };
 
-const multiply = function() {
 
+const multiply = function(array) {
+  return array.reduce((total, current) => total * current, 1);
 };
 
 const power = function() {
